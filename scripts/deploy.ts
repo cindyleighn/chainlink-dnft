@@ -1,7 +1,10 @@
 import { ethers } from "hardhat";
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 async function main() {
-  const subscriptionId = '1234';
+  const subscriptionId = process.env.CHAINLINK_SUBSCRIPTIONID;
 
   const contract = await ethers.deployContract("SuperDynamicNFT", [subscriptionId]);
 
