@@ -1,4 +1,4 @@
-# SuperDynamicNFT Chainlink example
+## SuperDynamicNFT Chainlink example
 
 Reference link: https://blog.chain.link/dynamic-nft-tutorial-using-chainlink/ 
 
@@ -6,13 +6,13 @@ The link above demonstrates a dynamic NFT to simulate watching the price of ETH.
 
 The steps below describe how to deploy the NFT using this code base. To integrate with the Chainlink VRF function follow the reference link above (Steps 5-7).
 
-# Prerequisites
+### Prerequisites
 
 A metamask account with exportable private key
 Matic for blockchain transactions - https://mumbaifaucet.com/
 LINK for automation - https://faucets.chain.link/mumbai
 
-# Initial setup and deployment
+### Initial setup and deployment
 
 Install dependencies:
 ```
@@ -30,7 +30,9 @@ Compile the contracts:
 yarn compile
 ```
 
-## Deploy to local
+**Important: You need a Chainlink subscription (see reference link for instructions). The subscriptionId is required during deployment. Update the subscriptionId variable value in the `scripts/deploy.ts` file before deployment.**
+
+### Deploy to local
 
 Run local node first:
 ```
@@ -42,7 +44,7 @@ Deploy:
 yarn hardhat run scripts/deploy.ts --network localhost
 ```
 
-## Deploy to mumbai
+### Deploy to mumbai
 ```
 yarn hardhat run scripts/deploy.ts --network mumbai
 ```
