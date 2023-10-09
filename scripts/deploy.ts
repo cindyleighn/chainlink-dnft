@@ -1,7 +1,7 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const subscriptionId = '6124';
+  const subscriptionId = '1234';
 
   const contract = await ethers.deployContract("SuperDynamicNFT", [subscriptionId]);
 
