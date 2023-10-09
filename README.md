@@ -8,9 +8,9 @@ The steps below describe how to deploy the NFT using this code base. To integrat
 
 ### Prerequisites
 
-A metamask account with exportable private key
-Matic for blockchain transactions - https://mumbaifaucet.com/
-LINK for automation - https://faucets.chain.link/mumbai
+- A metamask account with exportable private key
+- Matic for blockchain transactions - https://mumbaifaucet.com/
+- LINK for automation - https://faucets.chain.link/mumbai
 
 ### Initial setup and deployment
 
